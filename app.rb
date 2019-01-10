@@ -5,7 +5,15 @@ require "./books"
 
 
 get "/" do
-    erb :index
+    html = erb (:index)
+    if params[:queries]
+        book = params[:queries]
+        
+        @books = GoogleBooks.search(book) 
+
+        html += erb (:results)
+    end
+    html
 end
 
 post "/result" do
@@ -15,9 +23,9 @@ post "/result" do
 erb :result
 end
 
-post "/results" do
-    book = params[:queries]
-    @books = GoogleBooks.search(book)
+# post "/results" do
+#     book = params[:queries]
+#     @books = GoogleBooks.search(book)
 
-    erb :results
-end
+#     erb :results
+# end
