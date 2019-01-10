@@ -1,6 +1,11 @@
+
+<ul>
 <% @books.each do |item|%>
-<%=item.authors%>
-<%=item.description%>
-<%=item.isbn%>
+<li><%=item.title%></li>
+<li><%=item.authors%></li>
+<li><%=item.description%></li>
+<li><%=item.isbn%></li>
+</ul>
 <img src='<%=item.image_link%>'>
+<br>
 <%end%>

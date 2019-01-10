@@ -17,17 +17,20 @@ nav{
     margin: 14px;
     font-size: 14px;
     color: white;
-    background-color: black;
-
+    
 }
 
 a:hover {
-    background-color: gray;
+    background-color:greenyellow;
 }
 
 ul{
     font-size: 12px;
     justify-content: center;
+}
+
+li{
+    font-size: 12px;
 }
 
 img {
