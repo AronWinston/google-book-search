@@ -1,5 +1,7 @@
 body {
+    display: flex;
     background-color:gray;
+
 }
 
 h1{
@@ -12,11 +14,15 @@ h2 {
     font-size: 12px;
 }
 
-nav{
+nav,a{
     font-size: 14px;
     color: white;
     background-color: black;
 
+}
+
+a:hover {
+    background-color: gray;
 }
 
 ul{
