@@ -1,5 +1,4 @@
 body {
-    display: flex;
     background-color:gray;
 
 }
@@ -14,7 +13,8 @@ h2 {
     font-size: 12px;
 }
 
-nav,a{
+nav{
+    margin: 14px;
     font-size: 14px;
     color: white;
     background-color: black;
@@ -34,5 +34,5 @@ img {
     margin: 14px;
     justify-content: center;
     border: 2px solid black;
-    border-radius: 1em;
+    border-radius: .5em;
 }

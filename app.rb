@@ -9,8 +9,15 @@ get "/" do
 end
 
 post "/result" do
-book = params[:query]
-@books = GoogleBooks.search(book).first
+    book = params[:query]
+    @books = GoogleBooks.search(book).first
 
 erb :result
+end
+
+post "/results" do
+    book = params[:queries]
+    @books = GoogleBooks.search(book)
+
+    erb :results
 end
